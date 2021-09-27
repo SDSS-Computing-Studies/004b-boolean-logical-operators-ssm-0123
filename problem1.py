@@ -33,4 +33,8 @@ if num%6 == 0 and num%8 != 0 :
     num = round(num)
     num = int(num)
     print(num,"is frue")
+else :
+    num = round(num)
+    num = int(num)
+    print(num,"is not frue")
 
