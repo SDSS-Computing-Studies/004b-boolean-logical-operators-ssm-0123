@@ -31,3 +31,28 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and a perfect cube.
 """
+
+import math
+
+num = input("Number?:")
+num = float(num)
+
+sqrnum = num**(1/2)
+cubnum = num**(1/3)
+
+sqrnum = math.ceil(sqrnum)
+cubnum = math.ceil(cubnum)
+
+
+
+if sqrnum**2 == num and cubnum**3 != num :
+    num=int(num)
+    print(num,"is only a perfect square.")
+elif sqrnum**2 != num and cubnum**3 == num :
+    num=int(num)
+    print(num,"is only a perfect square.")
+elif sqrnum**2 == num and cubnum**3 == num :
+    num=int(num)
+    print(num,"is both a perfect square and a perfect cube.")
+
+

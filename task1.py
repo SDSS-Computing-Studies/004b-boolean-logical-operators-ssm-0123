@@ -24,3 +24,12 @@ Enter the distance of the Earth in AU: 1.011
 That is within normal Earth orbit.
 
 """
+
+pos = input("Enter the distance of the Earth in AU:")
+pos = float(pos)
+
+if 0.9759 < pos < 1.016 :
+    print("That is within normal Earth orbit.")
+else :
+    print("That is not within normal Earth orbit.")
+
