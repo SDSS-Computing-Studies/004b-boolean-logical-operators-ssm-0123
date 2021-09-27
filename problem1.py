@@ -30,6 +30,7 @@ num = input("Number?:")
 num = float(num)
 
 if num%6 == 0 and num%8 != 0 :
-    num =
+    num = round(num)
+    num = int(num)
     print(num,"is frue")
 
